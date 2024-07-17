@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/plugins/bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 py-5" style="background-color: #f9e4eb;">
+                <div class="row flex-column justify-content-center align-items-center h-100">
+                    <div class="col-6">
+                        <img class="img-fluid" src="asset/img/desktop1.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <h1>Xero Banks Loan</h1>
+                        <p>We are the most trusted banks to give loans for banks and home, cars and others to fulfil your dream</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 py-5">
+                <div class="row flex-column justify-content-center align-items-center h-100">
+                    <div class="col-10 col-lg-8 mb-3">
+                        <h1>Let's Start</h1>
+                        <p class="">Carefully read and fill up all the inputs with your original information</p>
+                        <div id="alert-success" class="alert alert-success d-none">
+                            <strong>Success!</strong> Registration Completed!
+                        </div>
+                    </div>
+                    <div class="col-10 col-lg-8">
+                        <form action="" class="">
+                            <div class="form-group mb-2">
+                                <label for="fullname">Fullname:</label>
+                                <input type="text" class="form-control" id="fullname" p,er="Enter fullname" name="fullname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email">Email Address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter phone number" name="phone" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group form-check mb-2">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                </label>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-5">
+                <div class="text-center my-5">
+                    <h2>Registered Users</h2>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <th>S/N</th>
+                            <th>Fullname</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Password</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr>
+                                <td colspan="6" class="text-danger text-center">No registered users!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="asset/js/script.js"></script>
+</body>
+</html>
